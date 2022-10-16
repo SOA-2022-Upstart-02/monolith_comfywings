@@ -31,13 +31,14 @@ TEST_STORY_ID = 8863
 
 story_url = hn_api_path_url(hn_item(TEST_STORY_ID))
 hn_response[story_url] = call_hn_url(story_url)
-story = JSON.parse hn_response[story_url]
+story = hn_response[story_url].parse
 
 hn_results['title']       = story['title']
 hn_results['score']       = story['score']
 hn_results['url']         = story['url']
 hn_results['timestamp']   = story['time']
 hn_results['no_comments'] = story['descendants']
+hn_results['type']        = story['type']
 
 ## BAD story request
 bad_story_url = hn_api_path_url(hn_item(0))
