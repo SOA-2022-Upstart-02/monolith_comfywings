@@ -3,7 +3,6 @@
 ## Resources
 
 - Stories
-- Comments
 
 NOTE: They are both implemented as items in the API
 
@@ -11,20 +10,13 @@ NOTE: They are both implemented as items in the API
 
 - stories
   - title
-  - comments
-  - points/upvotes/likes
-  - poster
-  - url/hn-internal
+  - score (points/upvotes/likes)
+  - url
   - timestamp
   - number of comments
-- comments
-  - timestamp
-  - content
-  - poster
 
 ## Entities
 
 Objects to be used in our project are as follows:
 
-- Story (title for keywords in search)
-- Comments (primarily for comment count)
+- Stories
