@@ -1,10 +1,10 @@
 ---
-flight_num: 242
+flight_num: 249
 flights:
 - seats_num: 4
   outbound_duration: PT28H25M
   inbound_duration: PT41H15M
-  total_price: '906.60'
+  total_price: '937.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -14,7 +14,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT28H25M
   inbound_duration: PT42H50M
-  total_price: '906.60'
+  total_price: '937.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -24,7 +24,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT31H50M
   inbound_duration: PT41H15M
-  total_price: '906.60'
+  total_price: '937.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -34,7 +34,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT31H50M
   inbound_duration: PT42H50M
-  total_price: '906.60'
+  total_price: '937.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -44,7 +44,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT34H40M
   inbound_duration: PT41H15M
-  total_price: '906.60'
+  total_price: '937.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -54,7 +54,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT35H45M
   inbound_duration: PT41H15M
-  total_price: '906.60'
+  total_price: '937.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -64,7 +64,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT34H40M
   inbound_duration: PT42H50M
-  total_price: '906.60'
+  total_price: '937.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -74,7 +74,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT35H45M
   inbound_duration: PT42H50M
-  total_price: '906.60'
+  total_price: '937.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -84,7 +84,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT28H25M
   inbound_duration: PT55H15M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -94,7 +94,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT31H50M
   inbound_duration: PT55H15M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -104,7 +104,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT28H25M
   inbound_duration: PT59H50M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -114,7 +114,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT34H40M
   inbound_duration: PT55H15M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -124,7 +124,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT35H45M
   inbound_duration: PT55H15M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -134,7 +134,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT31H50M
   inbound_duration: PT59H50M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -144,7 +144,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT34H40M
   inbound_duration: PT59H50M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -154,7 +154,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT35H45M
   inbound_duration: PT59H50M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -164,7 +164,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT28H25M
   inbound_duration: PT56H50M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -174,7 +174,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT31H50M
   inbound_duration: PT56H50M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -184,7 +184,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT34H40M
   inbound_duration: PT56H50M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -194,7 +194,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT35H45M
   inbound_duration: PT56H50M
-  total_price: '921.90'
+  total_price: '952.90'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -204,7 +204,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT40H40M
   inbound_duration: PT41H15M
-  total_price: '963.50'
+  total_price: '994.50'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -214,7 +214,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT40H40M
   inbound_duration: PT42H50M
-  total_price: '963.50'
+  total_price: '994.50'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -224,7 +224,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT40H40M
   inbound_duration: PT55H15M
-  total_price: '978.80'
+  total_price: '1009.80'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -234,7 +234,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT40H40M
   inbound_duration: PT59H50M
-  total_price: '978.80'
+  total_price: '1009.80'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -244,7 +244,7 @@ flights:
 - seats_num: 4
   outbound_duration: PT40H40M
   inbound_duration: PT56H50M
-  total_price: '978.80'
+  total_price: '1009.80'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -1924,7 +1924,7 @@ flights:
 - seats_num: 3
   outbound_duration: PT28H25M
   inbound_duration: PT42H55M
-  total_price: '1226.60'
+  total_price: '1257.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -1934,7 +1934,7 @@ flights:
 - seats_num: 3
   outbound_duration: PT31H50M
   inbound_duration: PT42H55M
-  total_price: '1226.60'
+  total_price: '1257.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -1944,7 +1944,7 @@ flights:
 - seats_num: 3
   outbound_duration: PT34H40M
   inbound_duration: PT42H55M
-  total_price: '1226.60'
+  total_price: '1257.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -1954,7 +1954,7 @@ flights:
 - seats_num: 3
   outbound_duration: PT35H45M
   inbound_duration: PT42H55M
-  total_price: '1226.60'
+  total_price: '1257.60'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -1964,7 +1964,7 @@ flights:
 - seats_num: 3
   outbound_duration: PT40H40M
   inbound_duration: PT42H55M
-  total_price: '1283.50'
+  total_price: '1314.50'
   origin: TPE
   departure_date: '2022-11-21T13:55:00'
   arrival_Date: '2022-11-21T16:50:00'
@@ -2301,6 +2301,26 @@ flights:
   currency_code: USD
   currency_name:
   is_one_way: false
+- seats_num: 4
+  outbound_duration: PT19H30M
+  inbound_duration: PT21H15M
+  total_price: '1419.10'
+  origin: TPE
+  departure_date: '2022-11-21T23:50:00'
+  arrival_Date: '2022-11-22T06:40:00'
+  currency_code: USD
+  currency_name:
+  is_one_way: false
+- seats_num: 4
+  outbound_duration: PT21H
+  inbound_duration: PT21H15M
+  total_price: '1423.50'
+  origin: TPE
+  departure_date: '2022-11-21T23:50:00'
+  arrival_Date: '2022-11-22T06:40:00'
+  currency_code: USD
+  currency_name:
+  is_one_way: false
 - seats_num: 5
   outbound_duration: PT23H
   inbound_duration: PT38H40M
@@ -2418,6 +2438,56 @@ flights:
   origin: TPE
   departure_date: '2022-11-21T10:00:00'
   arrival_Date: '2022-11-21T12:00:00'
+  currency_code: USD
+  currency_name:
+  is_one_way: false
+- seats_num: 3
+  outbound_duration: PT27H5M
+  inbound_duration: PT34H55M
+  total_price: '3172.20'
+  origin: TPE
+  departure_date: '2022-11-21T16:35:00'
+  arrival_Date: '2022-11-21T18:30:00'
+  currency_code: USD
+  currency_name:
+  is_one_way: false
+- seats_num: 3
+  outbound_duration: PT24H40M
+  inbound_duration: PT34H55M
+  total_price: '3186.60'
+  origin: TPE
+  departure_date: '2022-11-21T19:00:00'
+  arrival_Date: '2022-11-21T20:50:00'
+  currency_code: USD
+  currency_name:
+  is_one_way: false
+- seats_num: 3
+  outbound_duration: PT25H30M
+  inbound_duration: PT34H55M
+  total_price: '3186.60'
+  origin: TPE
+  departure_date: '2022-11-21T18:10:00'
+  arrival_Date: '2022-11-21T20:05:00'
+  currency_code: USD
+  currency_name:
+  is_one_way: false
+- seats_num: 3
+  outbound_duration: PT27H5M
+  inbound_duration: PT34H55M
+  total_price: '3186.60'
+  origin: TPE
+  departure_date: '2022-11-21T16:35:00'
+  arrival_Date: '2022-11-21T18:30:00'
+  currency_code: USD
+  currency_name:
+  is_one_way: false
+- seats_num: 3
+  outbound_duration: PT29H25M
+  inbound_duration: PT34H55M
+  total_price: '3186.60'
+  origin: TPE
+  departure_date: '2022-11-21T14:15:00'
+  arrival_Date: '2022-11-21T16:20:00'
   currency_code: USD
   currency_name:
   is_one_way: false
