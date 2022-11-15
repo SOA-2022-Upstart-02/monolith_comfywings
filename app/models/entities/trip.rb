@@ -3,7 +3,7 @@
 require 'dry-struct'
 require 'dry-types'
 
-# require_relative 'flight'
+require_relative 'flight'
 
 module ComfyWings
   module Entity
@@ -14,14 +14,9 @@ module ComfyWings
       attribute :id,              Integer.optional
       attribute :origin,          Strict::String
       attribute :destination,     Strict::String
-      attribute :departure_date,  Strict::String
-      attribute :arrival_date,    Strict::String
-      attribute :one_way,         Strict::Bool
-      attribute :currency,        Strict::String
       attribute :price,           Strict::String
-
-      # attribute :adult_qty,       Strict::Integer
-      # attribute :children_qty,    Strict::Integer
+      #attribute :oneWay,          Strict::Bool
+      attribute :flights,         Strict::Array.of(Flight)
 
       def to_attr_hash
         to_hash.except(:id)

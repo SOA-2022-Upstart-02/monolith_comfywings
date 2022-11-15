@@ -5,24 +5,23 @@
     tr 
       th Origin 
       th Destination 
-      th Duration
-      th Price 
-      th Flights
+      th price
+      th flights
       th Amenities
     - trips.each do |res|
       tr
         td
-          = res[:origin]
+          =res[:origin]
         td
-          = res[:destination]
+          =res[:destination]
         td
-          = res[:duration]
+          =res[:price] 
         td
-          = res[:price]
-        td
-          - res[:flights].each do |flight|
-            = "#{flight[:origin]} -> #{flight[:destination]}"
+          -res[:flights].each do |flight|
+            =flight[:departure_time] 
+            =flight[:arrival_time]
             br
+
         td
           / TODO: Display available amenities as icons
           a id="more-info" href="#" Hover for more details

@@ -25,11 +25,10 @@ module ComfyWings
             id: nil,
             origin:,
             destination:,
-            duration:
+            departure_time:,
+            arrival_time:
           )
         end
-
-        private
 
         def origin
           @data['departure']['iataCode']
@@ -39,8 +38,12 @@ module ComfyWings
           @data['arrival']['iataCode']
         end
 
-        def duration
-          @data['duration']
+        def departure_time
+          @data['departure']['at']
+        end
+
+        def arrival_time
+          @data['arrival']['at']
         end
       end
     end

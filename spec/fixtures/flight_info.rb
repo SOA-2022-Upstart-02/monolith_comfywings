@@ -75,6 +75,10 @@ matched_flights = flight_info['data']
 flight_results['flights'] = matched_flights.map do |flight|
   flight_info = {}
 
+  print flight['itineraries'][0]['segments'][0]['duration']
+  puts 
+
+=begin
   flight_info['seats_num'] = flight['numberOfBookableSeats']
   flight_info['outbound_duration'] = flight['itineraries'][0]['duration']
   flight_info['inbound_duration'] = flight['itineraries'][1]['duration']
@@ -85,7 +89,8 @@ flight_results['flights'] = matched_flights.map do |flight|
   flight_info['currency_code'] = flight['price']['currency']
   flight_info['currency_name'] = flight['dictionaries']
   flight_info['is_one_way'] = flight['oneWay']
+=end
   flight_info
 end
 
-File.write('spec/fixtures/flight_results.yml', flight_results.to_yaml)
+#File.write('spec/fixtures/flight_results.yml', flight_results.to_yaml)
