@@ -12,8 +12,8 @@ Sequel.migration do
       String      :destination
       Date        :departure_date
       Date        :arrival_date
-      Integer     :adult_qty
-      Integer     :children_qty
+     #Integer     :adult_qty
+     #Integer     :children_qty
       TrueClass   :one_way
     end
   end
