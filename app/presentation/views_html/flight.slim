@@ -1,27 +1,21 @@
 .container
   h2
-    = "Flights between #{date_range[:from]} and #{date_range[:to]}"
+    = "Leaving: #{date_range[:from]} returning: #{date_range[:to]}"
+  h3
+    = "Departing: #{origin_destination[:origin]} Arriving: #{origin_destination[:destination]}"
   table.table.table-dark 
     tr 
-      th Origin 
-      th Destination 
-      th price
-      th flights
+      th Depart Time
+      th Arrival Time 
       th Amenities
     - trips.each do |res|
       tr
-        td
-          =res[:origin]
-        td
-          =res[:destination]
-        td
-          =res[:price] 
-        td
-          -res[:flights].each do |flight|
-            =flight[:departure_time] 
+      -res[:flights].each do |flight|
+        tr
+          td
+            =flight[:departure_time]
+          td 
             =flight[:arrival_time]
-            br
-
-        td
-          / TODO: Display available amenities as icons
-          a id="more-info" href="#" Hover for more details
+          td
+            / TODO: Display available amenities as icons
+            a id="more-info" href="#" Hover for more details
