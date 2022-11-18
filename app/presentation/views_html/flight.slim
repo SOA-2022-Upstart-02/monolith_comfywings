@@ -5,17 +5,21 @@
     = "Departing: #{origin_destination[:origin]} Arriving: #{origin_destination[:destination]}"
   table.table.table-dark 
     tr 
-      th Depart Time
-      th Arrival Time 
+      th From
+      th To
+      th Duration
       th Amenities
     - trips.each do |res|
       tr
       -res[:flights].each do |flight|
         tr
           td
-            =flight[:departure_time]
-          td 
-            =flight[:arrival_time]
+            ="From #{flight[:origin]} to #{flight[:destination]}"
+          td
+            ="leaves at #{flight[:departure_time]} arrives at #{flight[:arrival_time]}"
+          td
+            =flight[:duration]
           td
             / TODO: Display available amenities as icons
             a id="more-info" href="#" Hover for more details
+            

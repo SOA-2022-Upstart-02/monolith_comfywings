@@ -15,7 +15,6 @@ module ComfyWings
       attribute :origin,          Strict::String
       attribute :destination,     Strict::String
       attribute :price,           Strict::String
-      #attribute :oneWay,          Strict::Bool
       attribute :flights,         Strict::Array.of(Flight)
 
       def to_attr_hash

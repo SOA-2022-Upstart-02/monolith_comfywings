@@ -26,7 +26,8 @@ module ComfyWings
             origin:,
             destination:,
             departure_time:,
-            arrival_time:
+            arrival_time:,
+            duration:
           )
         end
 
@@ -44,6 +45,10 @@ module ComfyWings
 
         def arrival_time
           @data['arrival']['at']
+        end
+
+        def duration
+          @data['duration']
         end
       end
     end

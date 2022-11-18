@@ -14,6 +14,7 @@ module ComfyWings
       attribute :destination,     Strict::String
       attribute :departure_time,  Strict::String
       attribute :arrival_time,    Strict::String
+      attribute :duration,        Strict::String
     end
   end
 end
