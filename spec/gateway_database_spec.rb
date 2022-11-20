@@ -95,7 +95,7 @@ describe 'Integration Tests of AMADEUS API and Database' do
       _(outbound_flight.duration_form[:hours]).must_equal 9
       _(outbound_flight.duration_form[:minutes]).must_equal 55
       refute(outbound_flight.is_return)
-
+      
       inbound_flight = rebuilt_trip.inbound_flights[0]
       _(inbound_flight.origin).must_equal 'MAD'
       _(inbound_flight.destination).must_equal 'DXB'

@@ -2,6 +2,7 @@
 
 require 'roda'
 require 'slim'
+require 'slim/include'
 require_relative '../presentation/view_objects/trips'
 
 # Remove this line once integrated with api
@@ -10,11 +11,15 @@ require 'yaml'
 module ComfyWings
   # Main controller class for ComfyWings
   class App < Roda
-    plugin :render, engine: 'slim', views: 'app/presentation/views_html' 
-    plugin :assets, css: 'style.css', path: 'app/presentation/assets'
-    plugin :common_logger, $stderr
+  
     plugin :halt
-    plugin :all_verbs
+    plugin :flash
+    plugin :all_verbs # enable other HTML verbs such as PUT/DELETE
+    plugin :render, engine: 'slim', views: 'app/presentation/views_html' 
+    
+    plugin :assets, path: 'app/presentation/assets',
+                    css: 'style.css'
+    plugin :common_logger, $stderr
 
     route do |routing|
       routing.assets # load CSS
@@ -28,6 +33,15 @@ module ComfyWings
       routing.is 'flight' do
         # POST /flight
         routing.post do
+          if routing.params['airport-origin'].empty? ||
+             routing.params['airport-destination'].empty? ||
+             routing.params['date-start'].empty? ||
+             routing.params['date-end'].empty?
+            flash[:error] = 'Input field must not be empty'
+            response.status = 400
+            routing.redirect '/'
+          end
+
           from = routing.params['airport-origin']
           to = routing.params['airport-destination']
           from_date = routing.params['date-start']

@@ -36,38 +36,13 @@
         }
 
       .col-lg-1.col-md-3.col-sm-4
-        .text-right Time: 
-      .col-lg-2.col-md-3.col-sm-8
-        input { 
-          type='time' name='origin-depart-time'
-          id='depart_time_origin' class="form-control"
-        }
-
-      .col-lg-1.col-md-3.col-sm-4
-        .text-right and
-      .col-lg-2.col-md-3.col-sm-8
-        input { 
-          type='time' name='destination-depart-time'
-          id='depart_time_destination' class="form-control"
-        }
-
-      .col-lg-1.col-md-12.col-sm-12
-        button { 
-          type='submit' id='flight-form-submit' class='submit' 
-          value='submit' class="btn btn-success" 
-        } Find Flights
-    .row
-      .col-md-12.blank-row
-
-//
-      .col-lg-1.col-md-3.col-sm-4
         .text-right Adults:
       .col-lg-2.col-md-3.col-sm-8
         input { 
           type='text' name='adult-qty'
           id='adult_qty_input' class="form-control"
         }
-//
+
       .col-lg-1.col-md-3.col-sm-4
         .text-right Children:
       .col-lg-2.col-md-3.col-sm-8
@@ -75,3 +50,20 @@
           type='text' name='children-qty'
           id='children_qty_input' class="form-control"
         }
+
+      .col-lg-1.col-md-3.col-sm-4 
+        .text-right Currency:
+      .col-lg-2.col-md-3.col-sm-4 
+        select.custom-select name="currency"
+          option value="USD" selected="selected" USD
+          option value="TWD" TWD
+          option value="EUR" EUR
+
+      .col-lg.col-md-12.col-sm-12
+
+        button { 
+          type='submit' id='flight-form-submit' class='submit' 
+          value='submit' class="btn btn-success" 
+        } Find Flights
+    .row
+      .col-md-12.blank-row

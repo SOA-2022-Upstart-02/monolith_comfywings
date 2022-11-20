@@ -5,10 +5,11 @@ ruby File.read('.ruby-version').strip
 
 # configuration and utilities
 gem 'figaro', '~> 1.2'
-gem 'rake'
+gem 'rake', '~> 13.0'
 
 # Web Application
 gem 'puma', '~> 5'
+gem 'rack-session', '~> 0.3'
 gem 'roda', '~> 3'
 gem 'slim', '~> 4'
 
@@ -17,13 +18,18 @@ gem 'hirb', '~> 0'
 gem 'hirb-unicode', '~> 0'
 gem 'sequel', '~> 5.49'
 
+group :development do
+  gem 'rerun', '~> 0'
+end
+
 group :development, :test do
   gem 'sqlite3'
 end
 
-#group :production do
- # gem 'pg'
-#end
+
+group :production do
+  gem 'pg', '~> 1.2'
+end
 
 # Networking
 gem 'http', '~> 5'
@@ -45,8 +51,11 @@ gem 'dry-types', '~> 1'
 gem 'pry'
 
 # Code Quality
-gem 'flog'
-gem 'reek'
-gem 'rubocop'
+group :development do
+  gem 'flog'
+  gem 'reek'
+  gem 'rubocop'
+end
 
 gem 'activesupport', '~> 7.0.4'
+
