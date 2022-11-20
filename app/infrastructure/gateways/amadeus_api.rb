@@ -13,6 +13,7 @@ module ComfyWings
         @secret = secret
       end
 
+
       def trip_data(from, to, from_date, to_date) #, origin_depart_time, destination_depart_time)
         destinations_to = create_destinations(1, from, to, from_date, '10:00:00') # "#{origin_depart_time}:00")
         destinations_from = create_destinations(2, to, from, to_date, '17:00:00') # "#{destination_depart_time}:00")
@@ -39,14 +40,13 @@ module ComfyWings
 
       private
 
-      def create_destinations(id, from, to, date, time)
+      def create_destinations(id, from, to, date)
         {
           id:,
           originLocationCode: from,
           destinationLocationCode: to,
           departureDateTimeRange: {
-            date:,
-            time:
+            date:
           }
         }
       end

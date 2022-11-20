@@ -48,3 +48,5 @@ gem 'pry'
 gem 'flog'
 gem 'reek'
 gem 'rubocop'
+
+gem 'activesupport', '~> 7.0.4'
