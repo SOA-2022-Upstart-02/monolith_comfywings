@@ -38,9 +38,9 @@ module ComfyWings
           trip_results = ComfyWings::Amadeus::TripMapper.new(App.config.AMADEUS_KEY, App.config.AMADEUS_SECRET)
             .search(from, to, from_date, to_date) 
 
-          viewable_trip = Views::Trips.new(trip_results)
+          #viewable_trip = Views::Trips.new(trip_results)
 
-          view 'flight', locals: { trips: viewable_trip, date_range: { from: from_date, to: to_date },
+          view 'flight', locals: { trips: trip_results, date_range: { from: from_date, to: to_date },
                                  origin_destination: {origin: from, destination: to}}
         end
       end
