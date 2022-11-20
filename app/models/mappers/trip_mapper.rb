@@ -59,7 +59,6 @@ module ComfyWings
 
         def flights
           @flight_mapper.load_several(@data['itineraries'][0]['segments'])
-          
         end
       end
     end

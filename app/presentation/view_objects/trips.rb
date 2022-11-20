@@ -14,5 +14,9 @@ module Views
     def destination
       @flight.destination
     end
+
+    def flights
+      @trip.flights
+    end
   end
 end
