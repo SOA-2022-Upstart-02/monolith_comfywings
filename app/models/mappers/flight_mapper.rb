@@ -29,17 +29,15 @@ module ComfyWings
             trip_id: nil,
             origin:,
             destination:,
-            duration:,
-            aircraft:,
-            number:,
             departure_time:,
             arrival_time:,
+            duration:
+            aircraft:,
+            number:,
             cabin_class:,
             is_return: return?
           )
         end
-
-        private
 
         def origin
           @flight_data['departure']['iataCode']
@@ -47,6 +45,14 @@ module ComfyWings
 
         def destination
           @flight_data['arrival']['iataCode']
+        end
+
+        def departure_time
+          @data['departure']['at']
+        end
+
+        def arrival_time
+          @data['arrival']['at']
         end
 
         def duration

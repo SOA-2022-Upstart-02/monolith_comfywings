@@ -3,7 +3,7 @@
 require 'dry-struct'
 require 'dry-types'
 
-# require_relative 'flight'
+require_relative 'flight'
 
 module ComfyWings
   module Entity
@@ -16,9 +16,9 @@ module ComfyWings
       attribute :currency,            Currency
       attribute :origin,              Strict::String
       attribute :destination,         Strict::String
+      attribute :price,               Strict::Decimal # TODO: Extract as value Object
       attribute :inbound_duration,    Strict::String
       attribute :outbound_duration,   Strict::String
-      attribute :price,               Strict::Decimal   # TODO: Extract as Value Object
       attribute :is_one_way,          Strict::Bool
       attribute :flights,             Strict::Array.of(Flight)
 

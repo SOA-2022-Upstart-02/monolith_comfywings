@@ -11,17 +11,17 @@ module ComfyWings
     class Flight < Dry::Struct
       include Dry.Types
 
-      attribute :id,                Integer.optional
-      attribute :trip_id,           Integer.optional
-      attribute :origin,            Strict::String
-      attribute :destination,       Strict::String
-      attribute :duration,          Strict::String
-      attribute :aircraft,          Strict::String
-      attribute :number,            Strict::String
-      attribute :departure_time,    Strict::Time
-      attribute :arrival_time,      Strict::Time
-      attribute :cabin_class,       Strict::String
-      attribute :is_return,         Strict::Bool
+      attribute :id,              Integer.optional
+      attribute :trip_id,         Integer.optional
+      attribute :origin,          Strict::String
+      attribute :destination,     Strict::String
+      attribute :departure_time,  Strict::String
+      attribute :arrival_time,    Strict::String
+      attribute :duration,        Strict::String
+      attribute :aircraft,        Strict::String
+      attribute :number,          Strict::String
+      attribute :cabin_class,     Strict::String
+      attribute :is_return,       Strict::Bool
 
       def to_attr_hash
         to_hash.except(:id, :trip_id)

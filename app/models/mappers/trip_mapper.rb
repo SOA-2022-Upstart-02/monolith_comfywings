@@ -43,6 +43,7 @@ module ComfyWings
             currency:,
             origin:,
             destination:,
+            price:,
             outbound_duration:,
             inbound_duration:,
             price:,
@@ -98,6 +99,10 @@ module ComfyWings
             @data['travelerPricings'][0]['fareDetailsBySegment'],
             @aircraft_data, is_return
           )
+        end
+
+        def flights
+          @flight_mapper.load_several(@data['itineraries'][0]['segments'])
         end
       end
     end
