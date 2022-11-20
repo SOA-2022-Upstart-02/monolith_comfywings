@@ -3,6 +3,7 @@
 require 'roda'
 require 'slim'
 require 'slim/include'
+require_relative '../presentation/view_objects/trips'
 
 # Remove this line once integrated with api
 require 'yaml'
@@ -10,10 +11,12 @@ require 'yaml'
 module ComfyWings
   # Main controller class for ComfyWings
   class App < Roda
+  
     plugin :halt
     plugin :flash
     plugin :all_verbs # enable other HTML verbs such as PUT/DELETE
-    plugin :render, engine: 'slim', views: 'app/presentation/views_html'
+    plugin :render, engine: 'slim', views: 'app/presentation/views_html' 
+    
     plugin :assets, path: 'app/presentation/assets',
                     css: 'style.css'
     plugin :common_logger, $stderr
@@ -43,10 +46,16 @@ module ComfyWings
           to = routing.params['airport-destination']
           from_date = routing.params['date-start']
           to_date = routing.params['date-end']
+          origin = routing.params['airport-origin']
+          destination = routing.params['airport-destination']
 
           trip_results = ComfyWings::Amadeus::TripMapper.new(App.config.AMADEUS_KEY, App.config.AMADEUS_SECRET)
-            .search(from, to, from_date, to_date)
-          view 'flight', locals: { trips: trip_results, date_range: { from: from_date, to: to_date } }
+            .search(from, to, from_date, to_date) 
+
+          #viewable_trip = Views::Trips.new(trip_results)
+
+          view 'flight', locals: { trips: trip_results, date_range: { from: from_date, to: to_date },
+                                 origin_destination: {origin: from, destination: to}}
         end
       end
     end
