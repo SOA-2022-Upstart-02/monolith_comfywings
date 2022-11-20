@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'flights'
+
 module Views
   #class for trip info
   class Trips
@@ -16,7 +18,7 @@ module Views
     end
 
     def flights
-      @trip.flights
+      Flight.new(@trip.flights)
     end
   end
 end
