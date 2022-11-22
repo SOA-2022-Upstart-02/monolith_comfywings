@@ -2,7 +2,6 @@
 
 require_relative 'trip_queries'
 require_relative 'currencies'
-require_relative 'flights'
 
 module ComfyWings
   module Repository
@@ -10,9 +9,7 @@ module ComfyWings
     module For
       ENTITY_REPOSITORY = {
         Entity::TripQuery => TripQueries,
-        Entity::Currency => Currencies,
-        Entity::Flight => Flights,
-        Entity::Trip => Trips
+        Entity::Currency => Currencies
       }.freeze
 
       def self.klass(entity_klass)

@@ -75,8 +75,6 @@ matched_flights = flight_info['data']
 flight_results['flights'] = matched_flights.map do |flight|
   flight_info = {}
 
- # print flight['itineraries'][0]['segments'][0]['duration']
- # puts 
   flight_info['seats_num'] = flight['numberOfBookableSeats']
   flight_info['outbound_duration'] = flight['itineraries'][0]['duration']
   flight_info['inbound_duration'] = flight['itineraries'][1]['duration']
