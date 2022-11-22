@@ -13,22 +13,14 @@ module ComfyWings
         @secret = secret
       end
 
-      def trip_data(from, to, from_date, to_date)
-        destinations_to = create_destinations(1, from, to, from_date, '10:00:00')
-        destinations_from = create_destinations(2, to, from, to_date, '17:00:00')
+
+      def trip_data(from, to, from_date, to_date) #, origin_depart_time, destination_depart_time)
+        destinations_to = create_destinations(1, from, to, from_date, '10:00:00') # "#{origin_depart_time}:00")
+        destinations_from = create_destinations(2, to, from, to_date, '17:00:00') # "#{destination_depart_time}:00")
         search = create_filter(destinations_to, destinations_from)
         response = Request.new(@key, @secret).trip(search)
         flight_data = JSON.parse(response)
         flight_data['data']
-      end
-
-      def data_dictionaries(from, to, from_date, to_date)
-        destinations_to = create_destinations(1, from, to, from_date, '10:00:00')
-        destinations_from = create_destinations(2, to, from, to_date, '17:00:00')
-        search = create_filter(destinations_to, destinations_from)
-        response = Request.new(@key, @secret).trip(search)
-        flight_data = JSON.parse(response)
-        flight_data['dictionaries']['currencies']
       end
 
       def airport(departure)
@@ -48,14 +40,13 @@ module ComfyWings
 
       private
 
-      def create_destinations(id, from, to, date, time)
+      def create_destinations(id, from, to, date)
         {
           id:,
           originLocationCode: from,
           destinationLocationCode: to,
           departureDateTimeRange: {
-            date:,
-            time:
+            date:
           }
         }
       end
@@ -65,7 +56,12 @@ module ComfyWings
           currencyCode: 'USD',
           originDestinations: [origin_destinations_to, origin_destinations_from],
           travelers: [{ id: '1', travelerType: 'ADULT' }],
-          sources: ['GDS']
+          sources: ['GDS'],
+          searchCriteria: {
+            flightFilters: {
+              cabinRestrictions: [{cabin: 'ECONOMY', originDestinationIds: ['1']}]
+            }
+          }
         }
       end
 
